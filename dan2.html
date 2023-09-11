@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body class="pt-5 mt-3">
+    <p class="px-4 ok " id="displayTop" style="text-decoration: underline"
+      ></p
+    >
+    <a href="array.html"><button id="caroBtn">Carousel</button></a>
+    <i id="mode" class="bi bi-moon"></i>
+    <br />
+    <div class="container-fluid d-flex">
+      <form class="container registerForm">
+        <h1 class="pb-3 text-center">Register</h1>
+        <label for="userName">Username:</label>
+        <input id="userName" class="shadow" type="text" /> <br />
+        <label for="email">Email:</label>
+        <input id="email" class="shadow" type="email" /> <br />
+        <label for="password">Password:</label>
+        <div class="position-relative">
+          <input id="password" class="shadow" type="password" />
+          <i onclick="eye()" class="bi bi-eye"></i>
+        </div>
+        <label for="confirmPass">Confirm Password:</label>
+        <div class="position-relative">
+          <input id="confirmPass" class="shadow" type="password" />
+          <i onclick="eye2()" class="bi bi-eye"></i>
+        </div>
+        
+        <button id="regBtn" type="button" class="btn shadow btn-primary"
+          >Register</button
+        >
+        <div class="text-center pt-3">
+            <h6>Already have an account? <a href="#" id="loginHere">Login</a></h6>
+        </div>
+    </form>
+    <form class="container loginForm">
+        <h1 class="pb-3 text-center">Login</h1>
+        <label for="loginUsername">Username or Email:</label>
+        <input id="loginUsername" class="shadow" type="text" /> <br />
+        <label for="logpassword">Password:</label>
+        <div class="position-relative">
+            <input id="logpassword" class="shadow" type="password" />
+            <i onclick="eye1()" class="bi bi-eye"></i>
+        </div>
+        <div class="d-flex text-start">
+            <input type="checkbox" name="" id="" style="height: 24px; width: 24px;">
+            <h6 class="ms-2">Remember Me</h6>
+        </div>
+        <button id="loginBtn" type="button" class="btn shadow btn-primary"
+        >Login</button
+        >
+        <div class="text-center pt-3">
+            <h6>Don't have an account? <a href="#" id="registerHere">Register</a></h6>
+        </div>
+    </form>
+</div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="dan2.js"></script>
+  </body>
+</html>
